@@ -76,17 +76,17 @@ class RestaurantTest {
     //<<<<<<<<<<<<<<<<<<<<<<<Items Total>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // Add method that returns the order value,
     // @Param : give the names of the Items in List.
-//    @Test
-//    public void return_the_total_price_for_the_given_list_of_items() {
-//
-//        List<String> orderList = new ArrayList<String>();
-//
-//        assertEquals(0, restaurant.getOrderTotal(orderList));
-//
-//        orderList.add("Sweet corn soup");
-//        orderList.add("Vegetable lasagne");
-//
-//        assertEquals(388, restaurant.getOrderTotal(orderList));
-//    }
+    @Test
+    public void return_the_total_price_for_the_given_list_of_items() {
+
+        List<String> orderList = new ArrayList<String>();
+
+        assertEquals(0, restaurant.getOrderTotal(orderList));
+
+        orderList.add("Sweet corn soup");
+        orderList.add("Vegetable lasagne");
+
+        assertEquals(388, restaurant.getOrderTotal(orderList));
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<Items Total>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
