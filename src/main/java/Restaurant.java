@@ -42,13 +42,13 @@ public class Restaurant {
         return null;
     }
 
-//    public int getOrderTotal(List<String> items) {
-//        int orderTotal = 0;
-//        for (String item : items) {
-//            orderTotal += this.findItemByName(item).getPrice();
-//        }
-//        return orderTotal;
-//    }
+    public int getOrderTotal(List<String> items) {
+        int orderTotal = 0;
+        for (String item : items) {
+            orderTotal += this.findItemByName(item).getPrice();
+        }
+        return orderTotal;
+    }
 
     public void addToMenu(String name, int price) {
         Item newItem = new Item(name, price);
